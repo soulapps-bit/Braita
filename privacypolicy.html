@@ -33,21 +33,33 @@
             <li><strong>Automatic Identifiers:</strong> We collect your unique <span class="highlight">Device ID</span>. This is mandatory to sync your quiz progress and daily limits to our database so you don't lose your data.</li>
         </ul>
 
-        <h2>2. How We Use Your Data</h2>
+        <h2>2. Notification System & Permissions</h2>
+        <p>To help you stay on track with your daily quiz goals, Braita uses a notification system. This requires the following permissions:</p>
+        <ul>
+            <li><strong>Post Notifications:</strong> To show you daily reminders and quiz updates.</li>
+            <li><strong>Exact Alarms & Reminders:</strong> Used to trigger your daily 7 PM reminder and welcome alerts at a precise time, even when the app is in the background.</li>
+            <li><strong>Local Storage:</strong> We use local timezone data (Asia/Colombo) to ensure reminders are delivered at the correct time based on your location.</li>
+        </ul>
+
+        <h2>3. Use of Database for Alerts</h2>
+        <p>We utilize <span class="highlight">Firebase Realtime Database</span> to send you important updates. The app listens to a specific notification node to display real-time messages regarding new quizzes, app updates, or ranking news. This process does not collect personal messages from your device; it only fetches public broadcast data from our server.</p>
+
+        <h2>4. How We Use Your Data</h2>
         <p>Information provided is used for:</p>
         <ul>
             <li><strong>Personalization:</strong> To display your chosen name and details on your profile page.</li>
             <li><strong>Hero Ranking:</strong> To show your name (if provided) or "Visitor" on the leaderboard.</li>
             <li><strong>Syncing:</strong> Using your Device ID to ensure your scores and daily 20-quiz progress are saved correctly.</li>
+            <li><strong>Reminders:</strong> To notify you at 7 PM daily to complete your 20-quiz goal for the Hero Ranking.</li>
         </ul>
 
-        <h2>3. Data Control and Deletion</h2>
-        <p>Since these details are optional, you can change or remove your name, age, or district at any time through the app settings. You also have the right to request full deletion of all data linked to your Device ID.</p>
+        <h2>5. Data Control and Deletion</h2>
+        <p>Since profile details are optional, you can change or remove your name, age, or district at any time through the app settings. You can also disable notifications at any time via your device system settings. You have the right to request full deletion of all data linked to your Device ID.</p>
 
-        <h2>4. Security</h2>
-        <p>We use industry-standard Firebase security protocols to protect both your optional profile data and your mandatory device identifiers.</p>
+        <h2>6. Security</h2>
+        <p>We use industry-standard Firebase security protocols and the <span class="highlight">flutter_local_notifications</span> framework to protect both your optional profile data and your notification preferences.</p>
 
-        <h2>5. Contact Us</h2>
+        <h2>7. Contact Us</h2>
         <p><strong>Email:</strong> qapp.help@gmail.com<br>
         <strong>Developer:</strong> KITAAS SOLUTIONS</p>
     </div>
